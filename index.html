@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carlos Castro</title>
+    <link rel="shortcut icon" href="assets/img/logosena.png" type="image/x-icon">
+    <!-- SEO Tags-->
+    <meta name="author" content="Carlos Andres Castro Jaramillo">
+    <meta name="description" content="Taller 1 de Maquetación Web">
+    <meta name="keywords" content="TALLER, taller, Taller">
+    <!--Optimization Tags -->
+    <!-- meta[name content]*5-->
+    <meta name="theme-color" content="#000000">
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-traslucent">
+
+    <!-- Bootstrap CSS cdn-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Bootstrap Icons cdn-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!--Bootstrap CSS Local
+    <link rel="stylesheet" href="assets/css/bootstrap.css">-->
+
+</head>
+
+<body>
+    <header class="sticky-top">
+        <!-- Navbar Principal  -->
+        <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm border-bottom border-light-subtle py-3">
+            <div class="container">
+                <!-- Marca / Logo Institucional -->
+                <a class="navbar-brand d-flex align-items-center fw-bold text-dark text-uppercase tracking-wider"
+                    href="#">
+                    <i class="bi bi-shield-check text-primary fs-3 me-2"></i>
+                    <span class="fs-5">App <span class="text-primary">Core</span></span>
+                </a>
+
+                <!-- Botón Toggler para Móviles -->
+                <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarMainPortal" aria-controls="navbarMainPortal" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Contenedor de Enlaces y Elementos Colapsables -->
+                <div class="collapse navbar-collapse" id="navbarMainPortal">
+                    <!-- Enlaces de Navegación Izquierdos -->
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4 small fw-semibold text-uppercase">
+                        <li class="nav-item">
+                            <a class="nav-link active text-primary" aria-current="page" href="#">
+                                <i class="bi bi-house-door me-1"></i> Inicio
+                            </a>
+                        </li>
+
+                        <!-- Menú Desplegable 1: Módulos -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false"><i class="bi bi-folder2-open me-1"></i> Módulos
+                            </a>
+                            <ul class="dropdown-menu border-0 shadow-sm mt-2">
+                                <li><a class="dropdown-item py-2 small" href="#"><i
+                                            class="bi bi-files me-2 text-muted"></i> Gestión de Registros</a></li>
+                                <li><a class="dropdown-item py-2 small" href="#"><i
+                                            class="bi bi-qr-code-scan me-2 text-muted"></i> Validación QR</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item py-2 small" href="#"><i
+                                            class="bi bi-graph-up-arrow me-2 text-muted"></i> Reportes Estadísticos</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- Menú Desplegable 2: Institucional -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <i class="bi bi-clipboard-data me-1"></i> Consultas
+                            </a>
+                            <ul class="dropdown-menu border-0 shadow-sm mt-2">
+                                <li><a class="dropdown-item py-2 small" href="#">Historial</a></li>
+                                <li><a class="dropdown-item py-2 small" href="#">Programación de Eventos</a></li>
+                                <li><a class="dropdown-item py-2 small" href="#">Descarga de Certificados</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="bi bi-headset me-1"></i> Soporte</a>
+                        </li>
+                    </ul>
+
+                    <!-- Área Derecha: Buscador y Acción de Usuario -->
+                    <div class="d-flex flex-column flex-lg-row align-items-lg-center gap-3">
+                        <!-- Botón de Acceso / Login Formal -->
+                        <a href="#"
+                            class="btn btn-sm btn-primary rounded-pill px-4 fw-semibold text-uppercase tracking-wide shadow-sm d-flex align-items-center justify-content-center">
+                            <i class="bi bi-person-circle me-2"></i> Acceder
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="carousel">
+            <!-- Carousel -->
+            <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+                <!-- Indicators/dots -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"
+                        aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+
+                <!-- The slideshow/carousel -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assets/img/img1.jpg" alt="Foto1" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/img/img2.jpg" alt="Foto2" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/img/img3.jpg" alt="Foto3" class="d-block w-100">
+                    </div>
+                </div>
+
+                <!-- Left and right controls/icons -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev"
+                    aria-label="Previous">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next"
+                    aria-label="Next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </section>
+        <section class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2 class="mb-3">Introducción al Proyecto</h2>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="https://picsum.photos/600/400?random=1" class="img-fluid rounded shadow-sm"
+                        alt="Imagen aleatoria 1">
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-light py-5">
+            <div class="container">
+                <div class="row text-center mb-4">
+                    <div class="col">
+                        <p class="h2">Nuestros Servicios</p>
+                        <p class="text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <img src="https://picsum.photos/400/300?random=2" class="card-img-top" alt="Servicio 1">
+                            <div class="card-body">
+                                <p class="h5 card-title">Análisis</p>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+                                    nisl eros.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <img src="https://picsum.photos/400/300?random=3" class="card-img-top" alt="Servicio 2">
+                            <div class="card-body">
+                                <p class="h5 card-title">Desarrollo</p>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+                                    nisl eros.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <img src="https://picsum.photos/400/300?random=4" class="card-img-top" alt="Servicio 3">
+                            <div class="card-body">
+                                <p class="h5 card-title">Implementación</p>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+                                    nisl eros.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-md-5 order-2 order-md-1 mt-4 mt-md-0">
+                    <img src="https://picsum.photos/500/500?random=5" class="img-fluid rounded-circle shadow"
+                        alt="Imagen aleatoria 5">
+                </div>
+                <div class="col-md-7 order-1 order-md-2">
+                    <p class="h2 mb-3">Enfoque Dinámico</p>
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pretium tincidunt
+                        lacus.</p>
+                    <p class="text-muted">Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros
+                        bibendum elit, nec luctus magna felis sollicitudin mauris.</p>
+                    <button class="btn btn-outline-primary mt-2">Saber más</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-dark text-white py-5">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-sm-6 col-md-3 mb-4 mb-md-0 border-end">
+                        <i class="bi bi-display" style="font-size: 3rem; color: cornflowerblue;"></i>
+                        <p class="h4 mt-3">Responsivo</p>
+                        <p class="small text-white-50">Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                    <div class="col-sm-6 col-md-3 mb-4 mb-md-0 border-end">
+                        <i class="bi bi-braces" style="font-size: 3rem; color: cornflowerblue;"></i>
+                        <p class="h4 mt-3">Semántico</p>
+                        <p class="small text-white-50">Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                    <div class="col-sm-6 col-md-3 mb-4 mb-md-0 border-end">
+                        <i class="bi bi-lightning-charge" style="font-size: 3rem; color: cornflowerblue;"></i>
+                        <p class="h4 mt-3">Rápido</p>
+                        <p class="small text-white-50">Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <i class="bi bi-database-check" style="font-size: 3rem; color: cornflowerblue;"></i>
+                        <p class="h4 mt-3">Datos</p>
+                        <p class="small text-white-50">Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container py-5">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h3 class="mb-3">Artículo Principal</h3>
+                    <img src="https://picsum.photos/800/300?random=6" class="img-fluid rounded mb-3 w-100"
+                        alt="Banner principal">
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <div class="col-lg-4 mt-4 mt-lg-0">
+                    <div class="p-4 bg-light border rounded h-100">
+                        <p class="h4 border-bottom pb-2 mb-3">Destacado</p>
+                        <p class="small text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <img src="https://picsum.photos/300/200?random=7" class="img-fluid rounded mb-3 w-100"
+                            alt="Miniatura">
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Dato importante 1
+                            </li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Dato importante 2
+                            </li>
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Dato importante 3</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-dark text-white py-4 mt-5 border-top border-secondary">
+        <div class="container text-center">
+            <div class="mb-3">
+                <a href="#" class="text-white me-3 text-decoration-none" aria-label="facebook"><i
+                        class="bi bi-facebook fs-4"></i></a>
+                <a href="#" class="text-white me-3 text-decoration-none" aria-label="instagram"><i
+                        class="bi bi-instagram fs-4"></i></a>
+                <a href="#" class="text-white me-3 text-decoration-none" aria-label="twitter"><i
+                        class="bi bi-twitter-x fs-4"></i></a>
+                <a href="#" class="text-white text-decoration-none" aria-label="github"><i
+                        class="bi bi-github fs-4"></i></a>
+            </div>
+
+            <ul class="nav justify-content-center mb-3">
+                <li class="nav-item"><a href="#" class="nav-link text-white-50 px-2 small">Inicio</a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-white-50 px-2 small">Modulos</a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-white-50 px-2 small">Consultas</a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-white-50 px-2 small">Soporte</a></li>
+            </ul>
+
+            <hr>
+            <p class="mb-0 text-white-50 small">&copy; 2026 Carlos Castro. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!--Bootstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

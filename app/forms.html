@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas Bootstrap</title>
+    <link rel="shortcut icon" href="../assets/img/logosena.png" type="image/x-icon">
+    <!-- SEO Tags-->
+    <meta name="author" content="Carlos Andres Castro Jaramillo">
+    <meta name="description" content="Taller 1 de Maquetación Web">
+    <meta name="keywords" content="TALLER, taller, Taller">
+    <!--Optimization Tags -->
+    <!-- meta[name content]*5-->
+    <meta name="theme-color" content="#000000">
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-traslucent">
+
+    <!-- Bootstrap CSS cdn
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">-->
+    <!-- Bootstrap Icons cdn-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!--Bootstrap CSS Local-->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+</head>
+
+<body>
+    <header class="sticky-top">
+        <!-- Navbar Principal  -->
+        <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm border-bottom border-light-subtle py-3">
+            <div class="container">
+                <!-- Marca / Logo Institucional -->
+                <a class="navbar-brand d-flex align-items-center fw-bold text-dark text-uppercase tracking-wider"
+                    href="#">
+                    <i class="bi bi-shield-check text-primary fs-3 me-2"></i>
+                    <span class="fs-5">App <span class="text-primary">Core</span></span>
+                </a>
+
+                <!-- Botón Toggler para Móviles -->
+                <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarMainPortal" aria-controls="navbarMainPortal" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Contenedor de Enlaces y Elementos Colapsables -->
+                <div class="collapse navbar-collapse" id="navbarMainPortal">
+                    <!-- Enlaces de Navegación Izquierdos -->
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4 small fw-semibold text-uppercase">
+                        <li class="nav-item">
+                            <a class="nav-link active text-primary" aria-current="page" href="tables.html">
+                                <i class="bi bi-house-door me-1"></i> Tablas
+                            </a>
+                        </li>
+
+                        <!-- Menú Desplegable 1: Módulos -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="forms.html" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-folder2-open me-1"></i>
+                                Formularios</a>
+                            </a>
+                        </li>
+
+                        <!-- Menú Desplegable 2: Institucional -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <i class="bi bi-clipboard-data me-1"></i> próximos Módulos
+                            </a>
+                            <ul class="dropdown-menu border-0 shadow-sm mt-2">
+                                <li><a class="dropdown-item py-2 small" href="#">Historial</a></li>
+                                <li><a class="dropdown-item py-2 small" href="#">Programación de Eventos</a></li>
+                                <li><a class="dropdown-item py-2 small" href="#">Descarga de Certificados</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="bi bi-headset me-1"></i> Próximos módulos</a>
+                        </li>
+                    </ul>
+
+                    <!-- Área Derecha: Buscador y Acción de Usuario -->
+                    <div class="d-flex flex-column flex-lg-row align-items-lg-center gap-3">
+                        <!-- Botón de Acceso / Login Formal -->
+                        <a href="../"
+                            class="btn btn-sm btn-primary rounded-pill px-4 fw-semibold text-uppercase tracking-wide shadow-sm d-flex align-items-center justify-content-center">
+                            <i class="bi bi-house-door me-1"></i> Salir
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="py-5 text-center container">
+            <div class="row py-lg-5">
+                <div class="col-lg-6 col-md-8 mx-auto">
+                    <h1 class="fw-light">Autenticación y Registro</h1>
+                    <p class="lead text-body-secondary">Formularios optimizados con el sistema de rejilla (Grid) de
+                        Bootstrap para la gestión de acceso de la ficha <kbd>3494620</kbd>.</p>
+                    <p>
+                        <a href="#" class="btn btn-primary my-2">Llamado a la acción</a>
+                        <a href="#" class="btn btn-secondary my-2">Acción secundaria</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="tablesdesign" class="container">
+            <div class="row g-4">
+
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm border-0 p-4 rounded-3">
+                        <div class="card-body">
+                            <h2 class="fs-4 fw-semibold text-dark mb-4">
+                                <i class="bi bi-person-plus me-2 text-primary"></i> Registro de Usuario
+                            </h2>
+                            <form>
+                                <div class="mb-3">
+                                    <label for="regName" class="form-label small fw-medium text-secondary">Nombre
+                                        Completo</label>
+                                    <input type="text" class="form-control shadow-none" id="regName"
+                                        placeholder="Ej. Juan Pérez" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="regEmail" class="form-label small fw-medium text-secondary">Correo
+                                        Electrónico</label>
+                                    <input type="email" class="form-control shadow-none" id="regEmail"
+                                        placeholder="nombre@correo.com" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="regPassword"
+                                        class="form-label small fw-medium text-secondary">Contraseña</label>
+                                    <div class="input-group">
+                                        <input type="password" class="form-control shadow-none toggle-password-input"
+                                            id="regPassword" placeholder="Crea una contraseña" required>
+                                        <button class="btn btn-outline-secondary btn-toggle-password" type="button"
+                                            aria-label="Mostrar u ocultar contraseña">
+                                            <i class="bi bi-eye"></i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="mb-4">
+                                    <label for="regConfirmPassword"
+                                        class="form-label small fw-medium text-secondary">Confirmar Contraseña</label>
+                                    <div class="input-group">
+                                        <input type="password" class="form-control shadow-none toggle-password-input"
+                                            id="regConfirmPassword" placeholder="Repite la contraseña" required>
+                                        <button class="btn btn-outline-secondary btn-toggle-password" type="button"
+                                            aria-label="Mostrar u ocultar contraseña">
+                                            <i class="bi bi-eye"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <button type="submit"
+                                    class="btn btn-primary w-100 rounded-pill fw-semibold text-uppercase tracking-wide py-2 shadow-sm">
+                                    Registrarse
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-lg  border-0 p-4 rounded-3">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <div>
+                                <h2 class="fs-4 fw-semibold text-dark mb-4">
+                                    <i class="bi bi-box-arrow-in-right me-2 text-primary"></i> Iniciar Sesión
+                                </h2>
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="loginEmail" class="form-label small fw-medium text-secondary">Correo
+                                            Electrónico</label>
+                                        <input type="email" class="form-control shadow-none" id="loginEmail"
+                                            placeholder="nombre@correo.com" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="loginPassword"
+                                            class="form-label small fw-medium text-secondary">Contraseña</label>
+                                        <div class="input-group">
+                                            <input type="password"
+                                                class="form-control shadow-none toggle-password-input"
+                                                id="loginPassword" placeholder="Ingresa tu contraseña" required>
+                                            <button class="btn btn-outline-secondary btn-toggle-password" type="button"
+                                                aria-label="Mostrar u ocultar contraseña">
+                                                <i class="bi bi-eye"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="mb-4 form-check">
+                                        <input type="checkbox" class="form-check-input shadow-none" id="loginRemember">
+                                        <label class="form-check-label small text-secondary"
+                                            for="loginRemember">Recordarme en este dispositivo</label>
+                                    </div>
+                                    <button type="submit"
+                                        class="btn btn-primary w-100 rounded-pill fw-semibold text-uppercase tracking-wide py-2 shadow-sm mt-auto">
+                                        Ingresar
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white py-4 mt-5 border-top border-secondary">
+        <div class="container text-center">
+            <div class="mb-3">
+                <a href="#" class="text-white me-3 text-decoration-none" aria-label="facebook"><i
+                        class="bi bi-facebook fs-4"></i></a>
+                <a href="#" class="text-white me-3 text-decoration-none" aria-label="instagram"><i
+                        class="bi bi-instagram fs-4"></i></a>
+                <a href="#" class="text-white me-3 text-decoration-none" aria-label="twitter"><i
+                        class="bi bi-twitter-x fs-4"></i></a>
+                <a href="#" class="text-white text-decoration-none" aria-label="github"><i
+                        class="bi bi-github fs-4"></i></a>
+            </div>
+
+            <ul class="nav justify-content-center mb-3">
+                <li class="nav-item"><a href="#" class="nav-link text-white-50 px-2 small">Tablas</a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-white-50 px-2 small">Próximos módulos</a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-white-50 px-2 small">Próximos módulos</a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-white-50 px-2 small">Próximos módulos</a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-white-50 px-2 small">Próximos módulos</a></li>
+            </ul>
+
+            <hr>
+            <p class="mb-0 text-white-50 small">&copy; 2026 Carlos Castro. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script>
+        document.querySelectorAll('.btn-toggle-password').forEach(button => {
+            button.addEventListener('click', function () {
+                // Buscar el input que está dentro del mismo input-group
+                const input = this.closest('.input-group').querySelector('.toggle-password-input');
+                const icon = this.querySelector('i');
+                
+                if (input.type === 'password') {
+                    input.type = 'text';
+                    icon.classList.remove('bi-eye');
+                    icon.classList.add('bi-eye-slash');
+                } else {
+                    input.type = 'password';
+                    icon.classList.remove('bi-eye-slash');
+                    icon.classList.add('bi-eye');
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
